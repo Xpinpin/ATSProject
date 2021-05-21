@@ -1,0 +1,118 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="modal fade" id="mvcModal" tabindex="-1" role="dialog" aria-labelledby="mvcModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mvcModal">Model View Controller</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img src="img/MVC.png" style="width: 75%;"/>  
+                </div>
+                <div class="text-secondary pt-2">
+                    <h5>Model</h5>
+                    <p>contains business logic</p>
+
+                    <h5>Controller</h5>
+                    <p>interacts with the <span class="font-weight-bold">Model</span> to create data for the <span class="font-weight-bold">View</span></p>
+
+                    <h5>View</h5>
+                    <p>renders contents to the user and relays user commands to the <span class="font-weight-bold">Controller</span>.</p>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="solidModal" tabindex="-1" role="dialog" aria-labelledby="solidModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mvcModal">SOLID Programming Design Principles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img src="img/solid.png" style="width: 50%;"/>  
+                </div>
+                <div class="text-secondary pt-2">
+                    <h5>Single Responsibility Principle</h5>
+                    <p>A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.</p>
+
+                    <h5>Open–closed principle</h5>
+                    <p>Software entities ... should be open for extension, but closed for modification.</p>
+
+                    <h5>Liskov substitution principle</h5>
+                    <p>Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program." Also know as design by interface or contract.</p>
+
+                    <h5>Interface segregation principle</h5>
+                    <p>Many client-specific interfaces are better than one general-purpose interface.</p>
+
+                    <h5>Dependency inversion principle</h5>
+                    <p>One should "depend upon abstractions, [not] concretions.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="diModal" tabindex="-1" role="dialog" aria-labelledby="diModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mvcModal">Dependency Inversion Principles</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-secondary pt-2">                    
+                    <h5>Dependency inversion principle</h5>
+                    <p>Class A should not depend on class B</p>
+                    <div class="text-center">                        
+                        <img src="img/concretedependency.png" style="width: 50%;"/>
+                    </div>
+                    <br />
+                    <p>Class A should depend on abstraction of interface C that class B implements</p>
+                    <div class="text-center">
+                        <img src="img/di.png" style="width: 50%;"/> 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="factoryModal" tabindex="-1" role="dialog" aria-labelledby="factoryModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mvcModal">Factory Pattern</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img src="img/factory.png" />  
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

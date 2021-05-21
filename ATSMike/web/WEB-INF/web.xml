@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+   
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!--Home View -->
+    <servlet>
+        <servlet-name>HomeView</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    
+
+    <welcome-file-list>
+        <welcome-file>home</welcome-file>
+    </welcome-file-list>
+    
+    
+    <!-- Home Controller -->
+    
+    <servlet>
+        <servlet-name>HomeController</servlet-name>
+        <servlet-class>com.nbcc.atsmike.controllers.HomeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <!-- Employee -->
+    <servlet>
+        <servlet-name>CreateEmployeeView</servlet-name>
+        <jsp-file>/employee.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateEmployeeView</servlet-name>
+        <url-pattern>/employee/create</url-pattern>
+    </servlet-mapping>
+    <!--Employee Controller Mapping -->
+    <servlet>
+        <servlet-name>EmployeeController</servlet-name>
+        <servlet-class>com.nbcc.atsmike.controllers.EmployeeController</servlet-class>
+    </servlet>
+    <!-- Mapping for EmployeeController-->
+    <!-- Map for retrieving the employees list -->
+    <servlet-mapping>
+        <servlet-name>EmployeeController</servlet-name>
+        <url-pattern>/employees</url-pattern>
+    </servlet-mapping>
+    <!-- Map for retrieveing an employee by the ID -->
+    <servlet-mapping>
+        <servlet-name>EmployeeController</servlet-name>
+        <url-pattern>/employee/*</url-pattern>
+    </servlet-mapping>
+    <!-- Employee -->
+    <!-- Team -->
+    <!--     <servlet>
+        <servlet-name>CreateTeamView</servlet-name>
+        <jsp-file>/team.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateTeamView</servlet-name>
+        <url-pattern>/team/create</url-pattern>
+    </servlet-mapping>-->
+    <!--Team Controller Mapping -->
+    <servlet>
+        <servlet-name>TeamController</servlet-name>
+        <servlet-class>com.nbcc.atsmike.controllers.TeamController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeamController</servlet-name>
+        <url-pattern>/teams</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TeamController</servlet-name>
+        <url-pattern>/team/*</url-pattern>
+    </servlet-mapping>
+    <!-- Team -->
+    <!-- Team -->
+    <!-- Start Routes for Clients -->
+    <servlet>
+        <servlet-name>CreateClientView</servlet-name>
+        <jsp-file>/client.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateClientView</servlet-name>
+        <url-pattern>/client/create</url-pattern>
+    </servlet-mapping>
+    <!--Employee Controller Mapping -->
+    <servlet>
+        <servlet-name>ClientController</servlet-name>
+        <servlet-class>com.nbcc.atsmike.controllers.ClientController</servlet-class>
+    </servlet>
+    <!-- Mapping for ClientController-->
+    <!-- Map for retrieving the clients list -->
+    <servlet-mapping>
+        <servlet-name>ClientController</servlet-name>
+        <url-pattern>/clients</url-pattern>
+    </servlet-mapping>
+    <!-- Map for retrieveing an employee by the ID -->
+    <servlet-mapping>
+        <servlet-name>ClientController</servlet-name>
+        <url-pattern>/client/*</url-pattern>
+    </servlet-mapping>
+    <!-- End Routes for Clients -->
+    <!-- Start Routes for Tasks -->
+    <servlet>
+        <servlet-name>CreateTaskView</servlet-name>
+        <jsp-file>/task.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateTaskView</servlet-name>
+        <url-pattern>/task/create</url-pattern>
+    </servlet-mapping>
+    <!-- Task Controller Mapping -->
+    <servlet>
+        <servlet-name>TaskController</servlet-name>
+        <servlet-class>com.nbcc.atsmike.controllers.TaskController</servlet-class>
+    </servlet>
+    <!-- Mapping for TaskController-->
+    <!-- Map for retrieving the tasks list -->
+    <servlet-mapping>
+        <servlet-name>TaskController</servlet-name>
+        <url-pattern>/tasks</url-pattern>
+    </servlet-mapping>
+    <!-- Map for retrieveing an tasks by the ID -->
+    <servlet-mapping>
+        <servlet-name>TaskController</servlet-name>
+        <url-pattern>/task/*</url-pattern>
+    </servlet-mapping>
+    <!-- End Routes for Tasks -->
+    <!-- Start Routes for Jobs -->
+    <!--    <servlet>
+        <servlet-name>CreateJobView</servlet-name>
+        <jsp-file>/job.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateJobView</servlet-name>
+        <url-pattern>/job/create</url-pattern>
+    </servlet-mapping>-->
+    <!--Employee Controller Mapping -->
+    <servlet>
+        <servlet-name>JobController</servlet-name>
+        <servlet-class>com.nbcc.atsmike.controllers.JobController</servlet-class>
+    </servlet>
+    <!-- Mapping for ClientController-->
+    <!-- Map for retrieving the clients list -->
+    <servlet-mapping>
+        <servlet-name>JobController</servlet-name>
+        <url-pattern>/jobs</url-pattern>
+    </servlet-mapping>
+    <!-- Map for retrieveing an employee by the ID -->
+    <servlet-mapping>
+        <servlet-name>JobController</servlet-name>
+        <url-pattern>/job/*</url-pattern>
+    </servlet-mapping>
+    <!-- End Routes for Jobs -->
+</web-app>
